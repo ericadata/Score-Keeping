@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="author" content="Erica Moses">
+        <meta name="description" content="Scoreboard for Game; Web Development Exercise">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>ScoreBoard</title>
+    </head>
+    <body class="d-flex flex-column align-items-center">
+        <h1>Scoreboard - The Keeper of Scores</h1>
+        <img src="img/josh-appel-PHwdpTVUlXw-unsplash.jpg" alt="box of cards and two red die" width="350px" class="rounded-top">
+        <p class="display-1"><span id="p1">0</span> to <span id="p2">0</span></p>
+        <p>Use the buttons below to keep score.</p>
+        <div>
+            <label for="game">Playing to:</label>
+            <select name="game" id="finalScore">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        </div>
+        <div>
+            <button id="p1add" class="btn-primary btn-lg">+1 Player 1</button>
+            <button id="p2add" class="btn-secondary btn-lg">+1 Player 2</button>
+            <button id="reset" class="btn-danger btn-lg">Reset</button>
+        </div>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
